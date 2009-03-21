@@ -1,26 +1,30 @@
 Summary:	A Telepathy connection manager using libpurple
+Summary(pl.UTF-8):	Zarządca połączeń Telepathy używający biblioteki libpurple
 Name:		telepathy-haze
-Version:	0.2.0
+Version:	0.2.1
 Release:	1
 License:	LGPL
 Group:		Libraries
 Source0:	http://telepathy.freedesktop.org/releases/telepathy-haze/%{name}-%{version}.tar.gz
-# Source0-md5:	63bb7d0f9c45be27d5cec478f9f61846
+# Source0-md5:	6da0d8194848be0fe95cae6d49cce112
 URL:		http://telepathy.freedesktop.org/wiki/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.8
 BuildRequires:	dbus-glib-devel >= 0.61
 BuildRequires:	libtool
 BuildRequires:	libxslt-progs
-BuildRequires:	openssl-devel >= 0.9.7
-BuildRequires:	pidgin-devel
+BuildRequires:	pidgin-devel >= 2.1.1
 BuildRequires:	pkgconfig
-BuildRequires:	telepathy-glib-devel >= 0.5.13-3
+BuildRequires:	telepathy-glib-devel >= 0.7.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 A connection manager to connect Telepathy to any of the protocols
 supported by pidgin's libpurple.
+
+%description -l pl.UTF-8
+Zarządca połączeń pozwalający połączyć się Telepathy z każdym
+protokołem wspieranym przez bibliotekę libpurple.
 
 %prep
 %setup -q
