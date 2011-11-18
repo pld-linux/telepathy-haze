@@ -1,22 +1,23 @@
 Summary:	A Telepathy connection manager using libpurple
 Summary(pl.UTF-8):	Zarządca połączeń Telepathy używający biblioteki libpurple
 Name:		telepathy-haze
-Version:	0.4.0
+Version:	0.5.0
 Release:	1
 License:	GPL v2
 Group:		Libraries
 Source0:	http://telepathy.freedesktop.org/releases/telepathy-haze/%{name}-%{version}.tar.gz
-# Source0-md5:	6e3e048cbee27aa37a64b8e9cc611664
+# Source0-md5:	4378726d61e1e5df789a05760a94d172
 URL:		http://telepathy.freedesktop.org/wiki/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake >= 1:1.9
 BuildRequires:	dbus-glib-devel >= 0.73
-BuildRequires:	libpurple-devel >= 2.1.1
+BuildRequires:	glib2-devel >= 1:2.22
+BuildRequires:	libpurple-devel >= 2.7
 BuildRequires:	libtool
 BuildRequires:	libxslt-progs
 BuildRequires:	pkgconfig
-BuildRequires:	telepathy-glib-devel >= 0.7.36
-Requires:	telepathy-glib >= 0.7.36
+BuildRequires:	telepathy-glib-devel >= 0.13.9
+Requires:	telepathy-glib >= 0.13.9
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -57,4 +58,3 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/telepathy-haze
 %{_mandir}/man8/*
 %{_datadir}/dbus-1/services/org.freedesktop.Telepathy.ConnectionManager.haze.service
-%{_datadir}/telepathy/managers/haze.manager
