@@ -63,6 +63,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS
-%attr(755,root,root) %{_libdir}/telepathy-haze
+%attr(755,root,root) %{_libexecdir}/telepathy-haze
 %{_mandir}/man8/telepathy-haze.8*
 %{_datadir}/dbus-1/services/org.freedesktop.Telepathy.ConnectionManager.haze.service
