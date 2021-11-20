@@ -2,7 +2,7 @@ Summary:	A Telepathy connection manager using libpurple
 Summary(pl.UTF-8):	Zarządca połączeń Telepathy używający biblioteki libpurple
 Name:		telepathy-haze
 Version:	0.8.1
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Libraries
 Source0:	https://telepathy.freedesktop.org/releases/telepathy-haze/%{name}-%{version}.tar.gz
